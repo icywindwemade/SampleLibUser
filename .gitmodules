@@ -1,0 +1,3 @@
+[submodule "SampleLibrary"]
+	path = SampleLibrary
+	url = git@github.com:icywindwemade/SampleLibrary.git

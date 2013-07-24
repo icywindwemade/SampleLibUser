@@ -82,6 +82,7 @@
 		361300EE179F635D002E9967 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 361300ED179F635D002E9967 /* cpVect.c */; };
 		361300F5179F635D002E9967 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 361300F4179F635D002E9967 /* AppDelegate.cpp */; };
 		361300F8179F635D002E9967 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 361300F7179F635D002E9967 /* HelloWorldScene.cpp */; };
+		36130106179F65C9002E9967 /* libSampleLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36130103179F659D002E9967 /* libSampleLibrary.a */; };
 		3613FD81179F6358002E9967 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613FD80179F6358002E9967 /* QuartzCore.framework */; };
 		3613FD83179F6358002E9967 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613FD82179F6358002E9967 /* OpenGLES.framework */; };
 		3613FD85179F6358002E9967 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613FD84179F6358002E9967 /* OpenAL.framework */; };
@@ -268,6 +269,23 @@
 		3613FFFE179F635C002E9967 /* CCSpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3613FFFD179F635C002E9967 /* CCSpriteLoader.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36130102179F659D002E9967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 361300FE179F659D002E9967 /* SampleLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3613FD5D179F5CF9002E9967;
+			remoteInfo = SampleLibrary;
+		};
+		36130104179F65C1002E9967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 361300FE179F659D002E9967 /* SampleLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3613FD5C179F5CF9002E9967;
+			remoteInfo = SampleLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		36130000179F635C002E9967 /* cocos-ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cocos-ext.h"; path = "libs/extensions/cocos-ext.h"; sourceTree = "<group>"; };
 		36130001179F635C002E9967 /* ExtensionMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExtensionMacros.h; path = libs/extensions/ExtensionMacros.h; sourceTree = "<group>"; };
@@ -427,6 +445,7 @@
 		361300F4179F635D002E9967 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		361300F6179F635D002E9967 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		361300F7179F635D002E9967 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		361300FE179F659D002E9967 /* SampleLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SampleLibrary.xcodeproj; path = SampleLibrary/SampleLibrary.xcodeproj; sourceTree = "<group>"; };
 		3613FD7D179F6358002E9967 /* SampleLibUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleLibUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3613FD80179F6358002E9967 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3613FD82179F6358002E9967 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -839,6 +858,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36130106179F65C9002E9967 /* libSampleLibrary.a in Frameworks */,
 				3613FD81179F6358002E9967 /* QuartzCore.framework in Frameworks */,
 				3613FD83179F6358002E9967 /* OpenGLES.framework in Frameworks */,
 				3613FD85179F6358002E9967 /* OpenAL.framework in Frameworks */,
@@ -1131,9 +1151,18 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		361300FF179F659D002E9967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36130103179F659D002E9967 /* libSampleLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3613FD74179F6358002E9967 = {
 			isa = PBXGroup;
 			children = (
+				361300FE179F659D002E9967 /* SampleLibrary.xcodeproj */,
 				3613FD90179F6358002E9967 /* SampleLibUser */,
 				3613FD7F179F6358002E9967 /* Frameworks */,
 				3613FD7E179F6358002E9967 /* Products */,
@@ -1998,6 +2027,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				36130105179F65C1002E9967 /* PBXTargetDependency */,
 			);
 			name = SampleLibUser;
 			productName = SampleLibUser;
@@ -2022,12 +2052,28 @@
 			mainGroup = 3613FD74179F6358002E9967;
 			productRefGroup = 3613FD7E179F6358002E9967 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 361300FF179F659D002E9967 /* Products */;
+					ProjectRef = 361300FE179F659D002E9967 /* SampleLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3613FD7C179F6358002E9967 /* SampleLibUser */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		36130103179F659D002E9967 /* libSampleLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSampleLibrary.a;
+			remoteRef = 36130102179F659D002E9967 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3613FD7B179F6358002E9967 /* Resources */ = {
@@ -2298,6 +2344,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		36130105179F65C1002E9967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SampleLibrary;
+			targetProxy = 36130104179F65C1002E9967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		361300F9179F635D002E9967 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2421,6 +2475,7 @@
 				361300FD179F635D002E9967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3613FD78179F6358002E9967 /* Build configuration list for PBXProject "SampleLibUser" */ = {
 			isa = XCConfigurationList;

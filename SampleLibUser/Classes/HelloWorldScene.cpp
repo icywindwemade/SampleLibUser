@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include "SampleLibrary/HiWorld.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -22,6 +23,8 @@ CCScene* HelloWorld::scene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
+    HiWorld hiWorld;
+    
     //////////////////////////////
     // 1. super init first
     if ( !CCLayer::init() )
