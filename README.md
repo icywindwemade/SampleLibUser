@@ -1,5 +1,5 @@
 This project shows how to use a Xcode static library, as Part 2 of the two projects.
-The first project is SampleLibrary.  (git@github.com:icywindwemade/SampleLibrary.git)
+The first project is SampleLibrary.  <git@github.com:icywindwemade/SampleLibrary.git>
 
 The following steps illustrates how it is done:
 
@@ -22,9 +22,9 @@ The following steps illustrates how it is done:
       ==> Now Xcode should be able to commit and push changes to Github
     4. Close Xcode project 
     5. git submodule add <Library Repo>
-    6. drag and drop the TCNetwork project file into the TestNetwork project.
-    7. TestNetwork->Build Phase->Target Dependencies->Add libTCNetwork.a
-    8. TestNetwork->Build Phase->Link Binary with Libraries->Add libTCNetwork.a
+    6. drag and drop the library project file into the user project.
+    7. TestNetwork->Build Phase->Target Dependencies->Add <library>.a
+    8. TestNetwork->Build Phase->Link Binary with Libraries->Add <library>.a
     9. Coding: #include "<submodule project name>/<header file>"
 
 
