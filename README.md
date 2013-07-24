@@ -29,10 +29,7 @@ The following steps illustrates how it is done:
 
 Remember:
 
-Cloning this project will not automatically clone the submodule.  After cloning do this:
-    1. git submodule init
+<b>Cloning this project will not automatically clone the submodule.</b>
+After cloning do this: 
+    1. git submodule init 
     2. git submodule update
-    
-    
-    
-
