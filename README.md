@@ -1,5 +1,6 @@
 This project shows how to use a Xcode static library, as Part 2 of the two projects.
-The first project is SampleLibrary.  <git@github.com:icywindwemade/SampleLibrary.git>
+The first project is SampleLibrary.  "git@github.com:icywindwemade/SampleLibrary.git"
+(Click the above SampleLibrary file link).
 
 The following steps illustrates how it is done:
 
@@ -30,6 +31,10 @@ The following steps illustrates how it is done:
 Remember:
 
 <b>Cloning this project will not automatically clone the submodule.</b>
+
+
 After cloning do this: 
+
     1. git submodule init 
     2. git submodule update
+
