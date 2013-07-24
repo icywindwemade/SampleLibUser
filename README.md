@@ -27,4 +27,12 @@ The following steps illustrates how it is done:
     8. TestNetwork->Build Phase->Link Binary with Libraries->Add <library>.a
     9. Coding: #include "<submodule project name>/<header file>"
 
+Remember:
+
+Cloning this project will not automatically clone the submodule.  After cloning do this:
+    1. git submodule init
+    2. git submodule update
+    
+    
+    
 
